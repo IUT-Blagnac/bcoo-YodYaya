@@ -1,4 +1,9 @@
-@startuml
+
+@startuml Examens
+
+hide circle
+hide empty members
+hide empty methods
 
 
 class Etudient {  
@@ -13,7 +18,7 @@ class Examens {
  coefficient  
   }
 
-class Note{
+class Note {
   note  
   }
 
@@ -25,6 +30,13 @@ class Enseignants{
   nom
   prenom  
   }
+
+Etudient "*" -- "1..*" Cours
+Examens "*" -- "1" Cours
+Etudient "1..*" -- "1..*" Examens
+(Etudient, Examens) . Note
+Enseignants "*" -- "*" Cours
+
 
 
 @enduml
