@@ -1,0 +1,38 @@
+
+@startuml Ordinateurs Portables
+
+hide circle
+hide empty members
+hide empty methods
+
+
+class portable {  
+  
+  prix achat
+  valeur actuelle
+  }
+
+class clavier {
+  azerty
+  qwerty
+  
+  
+}
+
+class Proprietaire {
+  nom
+  prenom
+  }
+
+class Touche {
+ 
+  }
+
+
+portable "1" -- "0..1" Proprietaire : Posseder
+clavier "1" -- "1" portable : Posseder
+clavier "1" -- "1..*" Touche : Posseder
+
+
+
+@enduml
