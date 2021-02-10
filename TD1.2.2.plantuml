@@ -1,4 +1,3 @@
-
 @startuml Ordinateurs Portables
 
 hide circle
@@ -6,13 +5,13 @@ hide empty members
 hide empty methods
 
 
-class portable {  
+class portable as "Portable" {  
   
   prix achat
   valeur actuelle
   }
 
-class clavier {
+class clavier as "Clavier"{
   azerty
   qwerty
   
