@@ -33,5 +33,4 @@ clavier "1" -- "1" portable : Posseder
 clavier "1" -- "1..*" Touche : Posseder
 
 
-
 @enduml
