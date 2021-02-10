@@ -1,1 +1,30 @@
+@startuml
 
+
+class Etudient {  
+  numero
+  nom
+  prenom
+  dateNaissance  
+  }
+
+class Examens {  
+ date
+ coefficient  
+  }
+
+class Note{
+  note  
+  }
+
+class Cours{
+  titre
+  code de module  
+  }
+class Enseignants{
+  nom
+  prenom  
+  }
+
+
+@enduml
