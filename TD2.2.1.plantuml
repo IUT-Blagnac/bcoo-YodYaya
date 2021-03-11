@@ -1,0 +1,55 @@
+
+@startuml Ordinateurs Portables
+
+hide circle
+hide empty members
+hide empty methods
+
+
+class Chien as "Chien" {  
+  
+  nom
+  date de naissance
+  date possesion
+  sexe 
+ 
+  
+  }
+
+class Propriétaire as "Propriétaire"{
+ 
+  nom
+  adresse
+  
+  
+  
+}
+
+class Concours {
+  
+ ville organisatrice
+  date
+  }
+
+class race as "Race"{
+  
+  race
+ 
+  }
+
+class Participer {
+  
+classement
+ 
+  }
+
+
+Chien "1..10" -- "1" Propriétaire : Appartenir
+Chien "0..*" -- "1" race : Posseder
+Chien "0..*" - "0..*" Concours
+(Chien,Concours).Participer
+
+
+
+
+@enduml
